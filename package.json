@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://reynaldo-94.github.io/reciam_page_web",
+  "homepage": "https://reynaldo-94/github.io/reciam_page_web",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

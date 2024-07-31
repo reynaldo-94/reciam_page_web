@@ -15,7 +15,7 @@ import '@fontsource/open-sans/800.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/reciam_page_web'>
       <ThemeProvider theme={DEFAULT_THEME}>
         <AppRouter />
       </ThemeProvider>

@@ -2,7 +2,7 @@ export const pages = [
   {
     id: '1',
     label: 'Inicio',
-    path: '/',
+    path: '//',
     background: false,
     menu: false
   },

@@ -72,7 +72,7 @@ export const NavBar = (props) => {
             justifyContent: 'space-between'
           }}>
             <Typography noWrap component="a"
-              href="#app-bar-with-responsive-menu"
+              href="#"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -82,7 +82,7 @@ export const NavBar = (props) => {
                 color: 'inherit',
                 textDecoration: 'none',
               }}>
-              <img src='/logo-final21.png' onClick={() => navigate('/')} />
+              <img src='./logo-final21.png' onClick={() => navigate('/')} />
             </Typography>
 
             {/* View Movil */}
@@ -124,7 +124,7 @@ export const NavBar = (props) => {
               </Menu>
             </Box>
             <Typography noWrap component="a"
-              href="#app-bar-with-responsive-menu" sx={{
+              href="#" sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
@@ -134,7 +134,7 @@ export const NavBar = (props) => {
                 color: 'inherit',
                 textDecoration: 'none',
               }}>
-              <img src='/logo-text-short.png' width={120} height={48} />
+              <img src='./logo-final21.png' width={120} height={48} />
             </Typography>
 
             {/* View Desktoop */}            

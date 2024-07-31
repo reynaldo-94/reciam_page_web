@@ -8,7 +8,7 @@ export const TransporteDisposicionPage = () => {
       <Grid container p='35px 50px 41px' rowSpacing='20px' columnSpacing='40px' sx={{ backgroundColor: ThemePalette.WHITE }}>
 
         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
-          <img src='/servicio_transporte_disposicion.png' width='100%' style={{ borderRadius: '20px' }} />
+          <img src='./servicio_transporte_disposicion.png' width='100%' style={{ borderRadius: '20px' }} />
         </Grid>
         <Grid item xs={12} md={6} component='div' display='flex' flexDirection='column' gap='20px'>
           {/* <TitleSection 

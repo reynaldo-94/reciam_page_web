@@ -14,7 +14,7 @@ const dataFooter = [
 
 export const Footer = () => (
   <Box marginTop='20px' p='20px 50px' component="footer" display='flex' flexDirection='column' sx={{ backgroundColor: ThemePalette.SECTION_BACKGROUND_GREEN }} color={ThemePalette.TEXT_WHITE} gap='7px' >
-    <Box display='flex' justifyContent='space-between'>
+    <Box display='flex' justifyContent='space-between' flexWrap='wrap'>
       <Box display='flex' flexDirection='column' gap='8px'>
         <Typography color={ThemePalette.WHITE} fontWeight='bold'>Información</Typography>
         <Box>

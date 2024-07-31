@@ -181,7 +181,7 @@ export const HomePage = () =>  {
                       variant='contained' 
                       color='info' 
                       sx={{ p: '10px 25px' }} 
-                      onClick={() => navigate('/area-infantil-adolescentes')}
+                      onClick={() => navigate(res.path)}
                       backgroundColor={ThemePalette.SKYBLUE_MEDIUM}
                     >Más información</CButton>
                   </CardActions>

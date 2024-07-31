@@ -6,7 +6,7 @@ const listSectors = [
   {
     id: 'sec_1',
     title: 'Sector Aduanas',
-    img: '/sector-aduana.jpeg',
+    img: './sector-aduana.jpeg',
     listDestruction: [
       {
         id: 'dest_1',
@@ -21,7 +21,7 @@ const listSectors = [
   {
     id: 'sec_2',
     title: 'Sector Agroalimentario',
-    img: '/sector-agroali.jpg',
+    img: './sector-agroali.jpg',
     listDestruction: [
       {
         id: 'dest_1',
@@ -40,7 +40,7 @@ const listSectors = [
   {
     id: 'sec_3',
     title: 'Sector Cosmético',
-    img: '/sector-cosmetico.jpg',
+    img: './sector-cosmetico.jpg',
     listDestruction: [
       {
         id: 'dest_1',
@@ -59,7 +59,7 @@ const listSectors = [
   {
     id: 'sec_4',
     title: 'Administración Pública',
-    img: '/sector-publico.jpg',
+    img: './sector-publico.jpg',
     listDestruction: [
       {
         id: 'dest_1',
@@ -70,7 +70,7 @@ const listSectors = [
   {
     id: 'sec_5',
     title: 'Sector de Comunicaciones',
-    img: '/sector-comunicacion.jpg',
+    img: './sector-comunicacion.jpg',
     listDestruction: [
       {
         id: 'dest_1',
@@ -78,14 +78,14 @@ const listSectors = [
       },
       {
         id: 'dest_2',
-        img: '/sector-comunicacion',
+        img: './sector-comunicacion',
         name: 'Destrucción de mercadería dañada'
       }
     ]
   },
   {
     id: 'sec_6',
-    img: '/sector-publico.jpg',
+    img: './sector-publico.jpg',
     title: 'Administración Pública',
     listDestruction: [
       {
@@ -130,7 +130,7 @@ export const DestruccionResiduosPage = () => {
           </Typography>         
         </Grid>
         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
-          <img src='/servicio_transporte_disposicion.png' width='100%' style={{ borderRadius: '20px' }} />
+          <img src='./servicio_transporte_disposicion.png' width='100%' style={{ borderRadius: '20px' }} />
         </Grid>
       </Grid>
 
@@ -152,7 +152,7 @@ export const DestruccionResiduosPage = () => {
         <Box bgcolor={ThemePalette.GREEN_MEDIUM} display='flex' gap='30px' flexWrap='wrap' justifyContent='space-between'>
           {
             listSectors.map((res) => (
-              <Box key={res.id} display='flex' flexDirection='column' pb='10px' bgcolor={ ThemePalette.WHITE } borderRadius='10px'>
+              <Box key={res.id} overflow='hidden' display='flex' flexDirection='column' pb='10px' bgcolor={ ThemePalette.WHITE } borderRadius='10px'>
                 <img src={res.img} width='350px' height='250px'/>
                 <Box display='flex' flexDirection='column' padding='10px' gap='10px'>
                   <Typography 

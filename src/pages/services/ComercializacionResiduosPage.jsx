@@ -7,7 +7,7 @@ export const ComercializacionResiduosPage = () => {
       <Grid container p='35px 50px 41px' rowSpacing='20px' columnSpacing='40px' sx={{ backgroundColor: ThemePalette.WHITE }}>
 
         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
-          <img src='/comer_residuos.png' width='100%' style={{ borderRadius: '20px' }} />
+          <img src='./comer_residuos.png' width='100%' style={{ borderRadius: '20px' }} />
         </Grid>
         <Grid item xs={12} md={6} component='div' display='flex' flexDirection='column' gap='20px'>
           {/* <TitleSection 
@@ -53,9 +53,9 @@ export const ComercializacionResiduosPage = () => {
           <Divider sx={{ backgroundColor: ThemePalette.WHITE, width: '150px', margin: 'auto' }} />
         </Box>
         
-        <Box display='flex' justifyContent='space-around'>
+        <Box display='flex' justifyContent='space-around' flexWrap='wrap' gap='10px'>
           <Box display='flex' flexDirection='column' bgcolor={ThemePalette.WHITE} borderRadius='10px' p='20px'>
-            <img src='/residuo_nopeligro.png' style={{ margin: 'auto' }} width='150px' />
+            <img src='./residuo_nopeligro.png' style={{ margin: 'auto' }} width='150px' />
             <Typography 
               component='h2' 
               fontSize={FontSize.TITLE_SECTION} 
@@ -77,7 +77,7 @@ export const ComercializacionResiduosPage = () => {
             </ul>
           </Box>
           <Box display='flex' flexDirection='column' bgcolor={ThemePalette.WHITE} borderRadius='10px' p='20px'>
-            <img src='/residuo_peligro.png' style={{ margin: 'auto' }} width='150px' />
+            <img src='./residuo_peligro.png' style={{ margin: 'auto' }} width='150px' />
             <Typography 
               component='h2' 
               fontSize={FontSize.TITLE_SECTION} 

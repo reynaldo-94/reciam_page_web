@@ -29,7 +29,7 @@ export const UsPage = () => {
       <Grid container p='35px 50px 41px' rowSpacing='20px' columnSpacing='40px' sx={{ backgroundColor: ThemePalette.US_BACKGROUND_GREEN }}>
 
         <Grid item xs={12} md={6} display='flex' justifyContent='center'>
-          <img src='/reciclaje_chatarra.png' width='100%' style={{ borderRadius: '20px' }} />
+          <img src='./reciclaje_chatarra.png' width='100%' style={{ borderRadius: '20px' }} />
         </Grid>
         <Grid item xs={12} md={6} component='div' display='flex' flexDirection='column' gap='20px'>
           {/* <TitleSection 
@@ -85,7 +85,7 @@ export const UsPage = () => {
         <Box display='flex' >
           <Box display='flex' flexDirection='column' flex={1}>
             <Box display='flex' justifyContent='center'>
-              <img src='/mision_1.jpg' width={220} />
+              <img src='./mision_1.jpg' width={220} />
             </Box>
             
             <Box display='flex' flexDirection='column' gap='5px'>
@@ -95,7 +95,7 @@ export const UsPage = () => {
           </Box>
           <Box display='flex' flexDirection='column' flex={1}>
             <Box display='flex' justifyContent='center'>
-              <img src='/mision_2.jpg' width={220} height={220} />
+              <img src='./mision_2.jpg' width={220} height={220} />
             </Box>
 
             <Box display='flex' flexDirection='column' gap='5px'>

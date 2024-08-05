@@ -82,7 +82,7 @@ export const UsPage = () => {
           Nuestra Filosofía
         </Typography>
         
-        <Box display='flex' >
+        <Box display='flex' flexWrap='wrap' >
           <Box display='flex' flexDirection='column' flex={1}>
             <Box display='flex' justifyContent='center'>
               <img src='./mision_1.jpg' width={220} />

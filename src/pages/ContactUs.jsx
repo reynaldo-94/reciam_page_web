@@ -96,10 +96,10 @@ export const ContactUs = () => {
           
         </Box>
           
-        <Box pt='30px' display='flex' gap='50px'>
+        <Box pt='30px' display='flex' gap='50px' flexWrap='wrap'>
 
           <Box display='flex' flex={1} justifyContent='center'>
-            <img src='/logo_form.png' width='400px' />
+            <img src='./logo_form.png' width='400px' />
           </Box>
           <Box flex={1}>
             <Typography component='p' mb='20px'>Cuéntanos en el siguiente formulario como te podemos ayudar</Typography>

@@ -70,3 +70,12 @@ button:focus-visible {
 body {
   margin: 0
 }
+
+.slick-track {
+  display: flex;
+  gap: 20px
+}
+
+.slick-next:before, .slick-prev:before {
+  color: #60BB46;
+}

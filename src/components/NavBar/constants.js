@@ -34,3 +34,21 @@ export const pages = [
     menu: false
   }
 ]
+
+export const services = [
+  {
+    id: '1',
+    label: 'Transporte a disposición final',
+    path: '/transporte-disposicion-final'
+  },
+  {
+    id: '2',
+    label: 'Comercialización de residuos',
+    path: '/comercializacion-residuos'
+  },
+  {
+    id: '3',
+    label: 'Destrucción de residuos sólidos',
+    path: '/destruccion-residuos-solidos'
+  },
+]

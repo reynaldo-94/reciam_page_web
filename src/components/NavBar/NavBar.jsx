@@ -149,10 +149,11 @@ export const NavBar = (props) => {
                     aria-haspopup="true"
                     aria-expanded={open ? 'true' : undefined}
                     onClick={(event) => handleClick(event, page.menu)}
-                    sx={{ my: 2, paddingTop: '8px', paddingBottom: '8px' }}
+                    sx={{ my: 2, paddingTop: '8px', paddingBottom: '8px', borderRadius: '30px' }}
                     variant={page.background ? 'contained': 'text'}
                     disableElevation
                     endIcon={page.menu && <KeyboardArrowDown />}
+                    isOnHoverMenu={page.menu}
                   >
                     {
                       !page.menu ? (

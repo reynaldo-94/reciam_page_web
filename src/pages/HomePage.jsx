@@ -79,7 +79,7 @@ export const HomePage = () =>  {
           {
             listServices.map((res) => (
               <Grid item md={4} xs={12} sm={6} key={res.id} >
-                <Card sx={{ backgroundColor: ThemePalette.SECTION_BACKGROUND_GREEN, boxShadow: 'none' }} >
+                <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none' }} >
                   <CardMedia
                     component="img"
                     alt="green iguana"
@@ -90,9 +90,6 @@ export const HomePage = () =>  {
                     <Typography gutterBottom component="div" textAlign='center' color={ThemePalette.WHITE} fontSize={FontSize.TITLE_PARAGRAPH}>
                       {res.title}
                     </Typography>
-                    {/* <Typography component='p' color={ThemePalette.WHITE} textAlign='center' fontSize={FontSize.PARAGRAPH}>
-                      {res.detail}
-                    </Typography> */}
                   </CardContent>
                   <CardActions sx={{ justifyContent: 'center', p: '0px', pt: '15px'}}>
                     <CButton 
@@ -110,59 +107,6 @@ export const HomePage = () =>  {
           }
         </Grid>
         
-        {/* <BoxExperiences component="div" display="flex" gap="20px" justifyContent="space-between" >
-          {
-            listServices.map((res) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  // if odd index card,slide from right instead of left
-                  x: (res.id - 1) % 2 === 0 ? 50 : -50
-                }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0, // Slide in to its original position
-                  transition: {
-                    duration: 1 // Animation duration
-                  }
-                }}
-                viewport={{ once: true }}
-                key={res.id}
-                style={{
-                  display: 'flex',
-                  flexDirection: 
-                }}
-              >
-                <Card sx={{ backgroundColor: ThemePalette.PURPLE_LIGHT_CARD, boxShadow: 'none' }} >
-                  <CardMedia
-                    component="img"
-                    alt="green iguana"
-                    image={res.image}
-                    sx={{ borderRadius: '30px', width: '300px' }}
-                  />
-                  <CardContent sx={{ p: '0px', pt: '12px' }}>
-                    <Typography gutterBottom component="div" textAlign='center' color={ThemePalette.WHITE} fontSize={FontSize.TITLE_PARAGRAPH}>
-                      {res.title}
-                    </Typography>
-                    <Typography component='p' color={ThemePalette.WHITE} textAlign='center' fontSize={FontSize.PARAGRAPH}>
-                      {res.detail}
-                    </Typography>
-                  </CardContent>
-                  <CardActions sx={{ justifyContent: 'center', p: '0px', pt: '15px'}}>
-                    <CButton 
-                      size="small" 
-                      variant='contained' 
-                      color='info' 
-                      sx={{ p: '10px 25px' }} 
-                      onClick={() => navigate('/contactanos')}
-                      backgroundColor={ThemePalette.SKYBLUE_MEDIUM}
-                    >Más información</CButton>
-                  </CardActions>
-                </Card>
-              </motion.div>
-            ))
-          }
-        </BoxExperiences> */}
       </Box>
 
       {/* Por que Elegirnos */}
@@ -176,7 +120,7 @@ export const HomePage = () =>  {
             fontWeight='bold'
             textAlign='center'
           >
-            ¿Por qué elejirnos?
+            ¿Por qué elegirnos?
           </Typography>
           <Divider sx={{ backgroundColor: ThemePalette.GREEN_MEDIUM, width: '140px', margin: 'auto' }} />
         </Box>
@@ -249,36 +193,6 @@ export const HomePage = () =>  {
           </Grid>
         </Grid>
       </Box>
-
-      {/* Clients */}
-      {/* <Box p='15px 50px 41px' component="div" flexDirection="column" display="flex" gap="25px" bgcolor={ThemePalette.WHITE}>
-        
-        <TitleSection 
-          title='Nuestros Clientes'
-          classname={TypeTitleSection.WHITE}
-        />
-
-        <Grid container gap='10px' justifyContent='center'>
-          <Grid item md={3} xs={12} sm={6}  p='10px' 
-            display='flex' alignItems='center' justifyContent='center' borderRadius='15px'>
-            <img src='/logo_oechsle.png' width='200px' />
-          </Grid>
-          <Grid item md={3} xs={12} sm={6}  p='10px' 
-            display='flex' alignItems='center' justifyContent='center' borderRadius='15px'>
-            <img src='/logo_plazavea.png' width='200px' />
-          </Grid>
-          <Grid item md={3} xs={12} sm={6}  p='10px' 
-            display='flex' alignItems='center' justifyContent='center' borderRadius='15px'>
-            <img src='/logo_upc.png' width='200px' />
-          </Grid>
-          <Grid item md={3} xs={12} sm={6}  p='10px' 
-            display='flex' alignItems='center' justifyContent='center' borderRadius='15px'>
-            <img src='/logo_falabella.png' width='200px' />
-          </Grid>
-
-        </Grid>
-
-      </Box> */}
 
       <Box p='15px 50px' component="div" display="flex" flexDirection="column" gap="20px" bgcolor={ThemePalette.SECTION_BACKGROUND_GREEN} pb='30px'>
         <TitleSection 
@@ -360,49 +274,6 @@ export const HomePage = () =>  {
 
       </Box>
 
-      {/* Consejos o Recomendaciones */}
-      {/* <Grid container p='15px 50px 41px' spacing='30px'>
-        
-        <Grid item xs={12} md={6} display='flex' justifyContent='center'>
-          <img src='/terapias.jpg' width='100%' />
-        </Grid>
-        <Grid item xs={12} md={6} component='div' display='flex' flexDirection='column' gap='20px'>
-          
-          <Box>
-            <Typography 
-              component='h2' 
-              fontSize={FontSize.TITLE_SECTION} 
-              color={ThemePalette.GREEN_MEDIUM} 
-              fontWeight='bold' 
-              textAlign='center'
-            >
-              ¿Por qué elejirnos?
-            </Typography>
-            <Divider sx={{ backgroundColor: ThemePalette.WHITE, width: '150px', margin: 'auto' }} />
-          </Box>
-          
-          <Typography 
-            component='p' 
-            textAlign='justify' 
-            fontSize={FontSize.PARAGRAPH} 
-            color={ThemePalette.BLACK_MEDIUM}
-            >
-              <ul>
-                <li>Porque presentamos un servicio integral, para que el cliente no tenga que preocuparse.</li>
-                <li>Por nuestra efectividad, aseguramos resultados.</li>
-                <li>Porque somos profesionales y trabajamos para asegurar el éxito de nuestros clientes.</li>
-                <li>Porque aseguramos el cumplimiento de los plazos establecidos.</li>
-                <li>Porque trabajamos con transparencia, confianza y empatía.</li>
-                <li>Porque su empresa y su proyecto son importantes para su nosotros.</li>
-                <li>Porque somos flexibles, nos adaptamos a las necesidades de su empresa.</li>
-                <li>Porque nos sentimos parte de su empresa.</li>
-                <li>Por nuestra efectividad, aseguramos resultados.</li>
-              </ul>
-          </Typography>         
-        </Grid>
-
-
-      </Grid> */}
     </>
   )
   

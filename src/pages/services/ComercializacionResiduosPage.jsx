@@ -63,7 +63,7 @@ export const ComercializacionResiduosPage = () => {
               fontWeight='bold' 
               textAlign='center'
             >
-              Residuos no peligrosos
+              Residuos peligrosos
             </Typography>
             <ul>
               <li>Papel</li>

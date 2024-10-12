@@ -85,7 +85,7 @@ export const Footer = () => {
           </Box>
 
           <Box>
-            <Typography color={ThemePalette.WHITE}>Calle Los Jazmines Mz. D2 Lt. 4 Chorrillos</Typography>
+            <Typography color={ThemePalette.WHITE}>Marquez de Corpac Chorreado Mz A Lote 1 Chorrillos</Typography>
           </Box>
         </Box>
         <Box display='flex' flexDirection='column' color={ThemePalette.WHITE}>
@@ -98,7 +98,7 @@ export const Footer = () => {
           </Box>
           <Box display='flex' gap='8px'>
             <Email />
-            <Typography>donaciones@gmail.com</Typography>
+            <Typography>reaciam@gmail.com</Typography>
           </Box>
         </Box>
       </Box>
@@ -107,7 +107,9 @@ export const Footer = () => {
           <WhatsApp fontSize='large' sx={{ color: '#fff' }} />
           <Box display='flex' flexDirection='column' color={ThemePalette.WHITE}>
             <Typography>Escríbenos ahora</Typography>
-            <Typography textAlign='center'>945740524</Typography>
+            <Typography textAlign='center' onClick={() => window.open('https://wa.me/51916502605', '_blank')} sx={{
+              cursor: 'pointer'
+            }} >945740524</Typography>
           </Box>
         </Box>
         {/* <Box display='flex' justifyContent='center'>
